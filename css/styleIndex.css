@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedorGalactico{
+    background-image: url('/img/wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#introGalactico{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.introGalactico-img{
+    float: right;
+    width: 70%;
+}
+
+.introGalactico-img img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.introGalactico-p{
+    margin: auto;
+    float: left;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+.introGalactico-p img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.introGalactico-p p{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+@media (max-width: 768px){
+    #introGalactico{
+        flex-direction: column;
+    }
+}

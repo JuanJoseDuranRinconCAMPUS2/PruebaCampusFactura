@@ -1,0 +1,43 @@
+{
+    "reclutas": [
+        {
+            "id":0,
+            "nombre": "",
+            "edad": 0,
+            "telefono": 0,
+            "email" : "",
+            "direccion": "",
+            "fecha_Nacimiento": "",
+            "CC": "",
+            "fecha_Ingreso" : "",
+            "id_team": ""
+        }
+    ],
+    "Team": [
+        {
+            "id": 0,
+            "nombre": "",
+            "trainer_asociado":""
+        }
+    ],
+    "skill":[
+        {
+            "id": 0,
+            "nombre" : 0
+        }
+    ],
+    "modulo_Skill":[
+        {
+            "id":0,
+            "nombre": "",
+            "id_skill": 0
+        }
+    ],
+    "Evaluacion":[
+        {
+            "id_recluta": 0,
+            "id_modulo": 0,
+            "nota":0
+        }
+    ]
+}

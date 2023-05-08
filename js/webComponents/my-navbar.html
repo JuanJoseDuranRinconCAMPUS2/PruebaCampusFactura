@@ -1,0 +1,106 @@
+<nav class="navbar">
+    <div id="tituloNav">
+        tower zenith
+    </div>
+    <a href="#" class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Registros</a></li>
+            <li><a href="#">Solicitudes</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<style>
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+#tituloNav{
+    font-size: 5rem;
+    margin: .5rem;
+    color: #1111;
+    -webkit-text-stroke: 2px #ffd900;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+    transition: 3s;
+}
+
+.navbar-links li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li :hover{
+    background-color: #ff00006b;
+    transition: 3s;
+}
+
+.toggle{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 41px;
+}
+
+.toggle .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px
+}
+
+@media (max-width: 994px){
+    #tituloNav{
+        font-size: 3rem;
+    }
+    .toggle{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+</style>
