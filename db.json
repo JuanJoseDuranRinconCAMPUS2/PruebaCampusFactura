@@ -1,43 +1,125 @@
 {
-    "reclutas": [
-        {
-            "id":0,
-            "nombre": "",
-            "edad": 0,
-            "telefono": 0,
-            "email" : "",
-            "direccion": "",
-            "fecha_Nacimiento": "",
-            "CC": "",
-            "fecha_Ingreso" : "",
-            "id_team": 0
-        }
-    ],
-    "Team": [
-        {
-            "id": 0,
-            "nombre": "",
-            "trainer_asociado":""
-        }
-    ],
-    "skill":[
-        {
-            "id": 0,
-            "nombre" : 0
-        }
-    ],
-    "modulo_Skill":[
-        {
-            "id":0,
-            "nombre": "",
-            "id_skill": 0
-        }
-    ],
-    "Evaluacion":[
-        {
-            "id_recluta": 0,
-            "id_modulo": 0,
-            "nota":0
-        }
-    ]
+  "reclutas": [
+    {
+      "nombre": "Maria",
+      "edad": "19",
+      "telefono": "3152353332423",
+      "email": "thegoldenjuan1987@gmail.com",
+      "dirrecion": "carrera 11c #11-03",
+      "fecha_Nacimiento": "2019-12-31",
+      "CC": "10645564",
+      "fecha_Ingreso": "2023-05-30",
+      "id_Team": "3",
+      "id": 1
+    },
+    {
+      "nombre": "jose alberto",
+      "edad": "17",
+      "telefono": "3152353332423",
+      "email": "dgdf@gmail.com",
+      "dirrecion": "carrera 11c #11-03",
+      "fecha_Nacimiento": "2023-04-30",
+      "CC": "41564545",
+      "fecha_Ingreso": "2023-05-30",
+      "id_Team": "2",
+      "id": 2
+    },
+    {
+      "nombre": "Juan Jose Duran Rincon ",
+      "edad": "12",
+      "telefono": "3152353383",
+      "email": "thegoldenjuan1987@gmail.com",
+      "dirrecion": "carrera 11c #11-32",
+      "fecha_Nacimiento": "2023-05-05",
+      "CC": "1097782901",
+      "fecha_Ingreso": "2023-05-25",
+      "id_Team": "4",
+      "id": 3
+    },
+    {
+      "nombre": "jose calderon",
+      "edad": "15",
+      "telefono": "3152353332423",
+      "email": "albertogimenez@gmail.com",
+      "dirrecion": "carrera 11c #11-32",
+      "fecha_Nacimiento": "2023-05-10",
+      "CC": "456486456456",
+      "fecha_Ingreso": "2023-05-10",
+      "id_Team": "1",
+      "id": 4
+    }
+  ],
+  "Team": [
+    {
+      "Team": "Discovery",
+      "trainer_asociado": "jolver",
+      "id": 1
+    },
+    {
+      "Team": "Challenger",
+      "trainer_asociado": "Miguel",
+      "id": 2
+    },
+    {
+      "Team": "Atlantis",
+      "trainer_asociado": "jolver",
+      "id": 3
+    },
+    {
+      "Team": "Columbia",
+      "trainer_asociado": "jolver",
+      "id": 4
+    }
+  ],
+  "skill": [
+    {
+      "nombre_Skill": "css",
+      "id": 4
+    },
+    {
+      "nombre_Skill": "js",
+      "id": 5
+    },
+    {
+      "nombre_Skill": "bootstrap",
+      "id": 6
+    }
+  ],
+  "modulo_Skill": [
+    {
+      "nombre_Modulo": "no es brujeria es tecnologia",
+      "id": 1
+    },
+    {
+      "nombre_Modulo": "bootstrap nativo",
+      "id": 2
+    },
+    {
+      "nombre_Modulo": "minecraft",
+      "id": 3
+    },
+    {
+        "nombre_Modulo": "minecraft",
+        "id": 4
+      }
+  ],
+  "Evaluacion": [
+    {
+      "nota": "3",
+      "id": 1
+    },
+    {
+      "nota": "4",
+      "id": 2
+    },
+    {
+      "nota": "2",
+      "id": 3
+    },
+    {
+      "nota": "4",
+      "id": 4
+    }
+  ],
+  "Usuario": []
 }

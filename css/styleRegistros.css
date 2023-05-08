@@ -35,3 +35,113 @@
     font-size: 2rem;
     font-weight: bold;
 }
+
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.Reclutas{
+    border-radius: 1rem;
+    background-color:azure;
+    box-shadow: 0 0 3rem -1rem rgba(191, 182, 182, 0.25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+}
+.Reclutas-imagen {
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.Reclutas-imagen img {
+    width: 100%;
+    max-width: 10rem;
+}
+.Reclutas-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.Reclutas-contenedor {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Reclutas-nombre {
+    font-size: 1.4rem;
+}
+@media screen and (min-width: 470px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+@media screen and (min-width: 700px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.btn3 {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  .btn3:hover{
+    color: white;
+  }
+  .btn3 a:hover{
+    color: white;
+  }
+  .btn3::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: rgb(255, 0, 0);
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn3:hover::before{
+    width: 160%;
+  }
+
+  .btn3 a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+  }
