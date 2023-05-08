@@ -1,0 +1,133 @@
+@import url(styleIndex.css);
+
+#titleBonito{
+    margin-top: 200px;
+    justify-content: center;
+    text-align: center;
+    font-size: 5rem;
+    color: #1111;
+    -webkit-text-stroke: 2px #ffd900;
+}
+
+.bar{
+    height: 200px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px
+}
+
+.contenedorimg img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 520px){
+    #titleBonito{
+        font-size: 3rem;
+
+    }
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.Reclutas{
+    border-radius: 1rem;
+    background-color:azure;
+    box-shadow: 0 0 3rem -1rem rgba(191, 182, 182, 0.25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+}
+.Reclutas-imagen {
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.Reclutas-imagen img {
+    width: 100%;
+    max-width: 10rem;
+}
+.Reclutas-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.Reclutas-contenedor {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Reclutas-nombre {
+    font-size: 1.4rem;
+}
+@media screen and (min-width: 470px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+@media screen and (min-width: 700px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+.modal__title{
+    font-size: 2.5rem;
+}
+.modal__paragraph{
+    margin-bottom: 10px;
+}
+.modal__img{
+    width: 90%;
+    max-width: 300px;
+}

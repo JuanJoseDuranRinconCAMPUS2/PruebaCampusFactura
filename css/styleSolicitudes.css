@@ -21,3 +21,9 @@ td{
     font-family: sans-serif;
     padding: 5px;
 }
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
