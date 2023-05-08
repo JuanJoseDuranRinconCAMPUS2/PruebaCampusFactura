@@ -1,16 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-}
-
-.contenedorGalactico{
     background-image: url('/img/wallpaper.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #introGalactico{
+    margin-top: 150px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -56,3 +53,51 @@ body{
         flex-direction: column;
     }
 }
+
+.btn1 {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  .btn1:hover{
+    color: white;
+  }
+  .btn1 a:hover{
+    color: white;
+  }
+  .btn1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: blue;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn1:hover::before{
+    width: 160%;
+  }
+
+  .btn1 a{
+    text-decoration: none;
+    color: blue;
+  }

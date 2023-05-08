@@ -21,6 +21,7 @@ export let wsMySection = {
                 </p>
             </div>
         </div>
+        <button class="btn1"><a href="./Registros.html">¡Ingresa a los Nuevos Astro-Developers!</a></button>
         `
     }
 }

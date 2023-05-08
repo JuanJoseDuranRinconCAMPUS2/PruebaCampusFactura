@@ -1,0 +1,90 @@
+<footer class="footer">
+    <div class="wrap-footer">
+        <div class="txt-footer element-footer">
+            <h1 class="Titleuwu">tower zenith</h1><img src="./img/Zenith.webp" width="100px">
+            <p>
+                Gracias por visitar nuestra pagina, el futuro esta cada dia mas cerca de nosotros y de parte de tower zenith buscamos que ese futuro sea el mejor para todos, todo esto gracias a nuestros
+                Astro-Developers, ellos son los pilones del gran futuro tecnologico
+            </p>
+        </div>
+        <div class="txt-footer element-footer">
+            <h2>Dirección</h2>
+            <ul>
+            <li>Km 4, Anillo Vial, Bucaramanga, Santander</li>
+            <li>Zona Franca Santander</li>
+            </ul>
+        </div>
+        <div class="txt-footer link-elements-footer element-footer">
+            <h2>Más Información</h2>
+            <ul>
+            <li><a href="./index.html">Nosotros</a></li>
+            <li><a href="./Registros.html">Registros</a></li>
+            <li><a href="./Solicitudes.html">Solicitudes</a></li>
+            <li><a href="./Contacto.html">Contacto</a></li>
+            </ul>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+
+<style>
+    footer{
+        background-color: #000000;
+    }
+    footer ul{
+        padding:0;
+    }
+    footer li{
+        color: #FFC300;
+        font-family: sans-serif;
+    }
+    .wrap-footer{
+        display: grid;
+        grid-template-columns: 30% 30%  15%;
+        grid-gap: 10px;
+        column-gap: 5%;
+        padding: 1rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Titleuwu{
+        color: white;
+        font-family: sans-serif;
+    }
+    .txt-footer p{
+        color: #FFC300;
+        font-family: sans-serif;
+    }
+    .element-footer h2{
+        color: white;
+        font-family: sans-serif;
+        margin: 1rem 0;
+    }
+    .txt-footer li{
+        line-height: 2;
+    }
+    .link-elements-footer li a{
+        color:#FFC300;
+    }
+    
+    @media (max-width:768px){
+        .wrap-footer{
+        grid-template-columns: repeat(2,1fr);
+        }
+    }
+    
+    @media (max-width:480px){
+        .wrap-footer{
+        grid-template-columns: repeat(1,1fr);
+        }
+    }
+    
+    @media (max-width:320px){
+        .footer-creds{
+        flex-flow: column;
+        }
+    }
+</style>
