@@ -11,6 +11,62 @@
 <body>
     <my-navbar></my-navbar>
     <div class="contenedorGalactico">
+        <fieldset id="FormDatos">
+            <legend id="titleForm">Formulario De Registro</legend>
+            <form id="myFormulario">
+                <fieldset>
+                    <legend>Datos De Registro</legend>
+                    <h4 id="text1">Ingresa tus datos iniciales</h4>
+                    <div class="underline">
+                    </div><br>
+                    <h4 id="text1">Nombre</h4>
+                    <input type="text" name="nombre" placeholder="Nombre del Recluta" required><br>
+                    <h4 id="text1">Edad</h4>
+                    <input type="number" min="18" max="99" name="edad" placeholder="Edad del Recluta" required><br>
+                    <h4 id="text1">Telefono</h4>
+                    <input type="tel" name="telefono" placeholder="Telefono del Recluta" required><br>
+                    <h4 id="text1">email</h4>
+                    <input type="email" name="email" placeholder="Correo del Recluta" required><br>
+                    <h4 id="text1">direccion</h4>
+                    <input type="text" name="dirrecion" placeholder="Direccion del Recluta" required><br>
+                    <h4 id="text1">Fecha De Nacimiento</h4>
+                    <input type="date" name="fecha_Nacimiento" placeholder="Fecha de Nacimiento Del Recluta" required><br>
+                    <h4 id="text1">Identificacion</h4>
+                    <input type="number" name="CC" placeholder="Identificacion del Recluta" required><br>
+                    <h4 id="text1">Fecha De Ingreso</h4>
+                    <input type="date" name="fecha_Ingreso" placeholder="Fecha de Registro Del Recluta" required><br>
+                </fieldset>
+                <h4 id="text1">Datos de Estudio</h4>
+                <fieldset>
+                    <legend>Datos del Team</legend>
+                    <h4>Ingresa la siguiente Informacion</h4>
+                    <h4 id="text1">Team</h4>
+                    <select name="Team" required>
+                        <option>Columbia</option>
+                        <option>Challenger</option>
+                        <option>Discovery</option>
+                        <option>Atlantis</option>
+                    </select><br>
+                    <input type="text" name="trainer_asociado" placeholder="Nombre del Trainer" required><br>
+                </fieldset>
+                    <fieldset>
+                        <legend>Datos de tu Skill</legend>
+                        <h4>Ingresa la siguiente Informacion</h4>
+                        <input type="text" name="nombre" placeholder="Nombre de tu skill" required><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos del modulo de tu Skill</legend>
+                        <h4>Ingresa la siguiente Informacion</h4>
+                        <input type="text" name="nombre" placeholder="Nombre del modulo" required><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de la Evaluación</legend>
+                        <h4>Ingresa la siguiente Informacion</h4>
+                        <input type="number" name="nota" placeholder="Nota del Recluta" required><br>
+                    </fieldset>
+                        <button class="btn1" type="submit">¡Enviar!</button>
+                </fieldset>
+            </form>     
     </div>
     <my-footer></my-footer>
 </body>

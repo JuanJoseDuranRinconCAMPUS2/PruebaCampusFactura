@@ -10,7 +10,7 @@
             "fecha_Nacimiento": "",
             "CC": "",
             "fecha_Ingreso" : "",
-            "id_team": ""
+            "id_team": 0
         }
     ],
     "Team": [
